@@ -3,7 +3,7 @@
 import random
 
 ACHIVEMENT_LIST = ['Crafting Genius', 'Strategist', 'World Savior',
-                   'Speed Runner', 'Survivor','Master Explorer',
+                   'Speed Runner', 'Survivor', 'Master Explorer',
                    'Treasure Hunter', 'Unstoppable', 'First Steps',
                    'Collector Supreme', 'Untouchable', 'Sharp Mind',
                    'Boss Slayer']
