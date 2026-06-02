@@ -3,10 +3,10 @@
 import random
 
 ACHIEVEMENT_LIST = ['Crafting Genius', 'Strategist', 'World Savior',
-                   'Speed Runner', 'Survivor', 'Master Explorer',
-                   'Treasure Hunter', 'Unstoppable', 'First Steps',
-                   'Collector Supreme', 'Untouchable', 'Sharp Mind',
-                   'Boss Slayer']
+                    'Speed Runner', 'Survivor', 'Master Explorer',
+                    'Treasure Hunter', 'Unstoppable', 'First Steps',
+                    'Collector Supreme', 'Untouchable', 'Sharp Mind',
+                    'Boss Slayer']
 
 
 def gen_player_achievements() -> set:
