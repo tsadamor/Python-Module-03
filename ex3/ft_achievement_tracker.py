@@ -2,26 +2,26 @@
 
 import random
 
-ACHIVEMENT_LIST = ['Crafting Genius', 'Strategist', 'World Savior',
+ACHIEVEMENT_LIST = ['Crafting Genius', 'Strategist', 'World Savior',
                    'Speed Runner', 'Survivor', 'Master Explorer',
                    'Treasure Hunter', 'Unstoppable', 'First Steps',
                    'Collector Supreme', 'Untouchable', 'Sharp Mind',
                    'Boss Slayer']
 
 
-def gen_player_achivements() -> set:
+def gen_player_achievements() -> set:
     num_to_pick = random.randint(5, 9)
-    random_picks = random.sample(ACHIVEMENT_LIST, num_to_pick)
+    random_picks = random.sample(ACHIEVEMENT_LIST, num_to_pick)
     return set(random_picks)
 
 
 def main() -> None:
     print("=== Achievement Tracker System ===\n")
 
-    alice = gen_player_achivements()
-    bob = gen_player_achivements()
-    charlie = gen_player_achivements()
-    dylan = gen_player_achivements()
+    alice = gen_player_achievements()
+    bob = gen_player_achievements()
+    charlie = gen_player_achievements()
+    dylan = gen_player_achievements()
 
     print(f"Player Alice: {alice}")
     print(f"Player Bob: {bob}")

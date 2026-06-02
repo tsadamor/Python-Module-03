@@ -14,15 +14,20 @@ for arg in sys.argv[1:]:
 
     except ValueError:
         print(f"Invalid parameter: '{arg}'")
+
+total_valid_players = len(scores_list)
 if len(scores_list) > 0:
+    total_score = sum(scores_list)
+    average_score = total_score / total_valid_players
+
     print(f"Scores processed: {scores_list}")
-    print(f"Total players: {argc - 1}")
-    print(f"Total score: {sum(scores_list)}")
-    print(f"Average score: {(sum(scores_list) / argc - 1):.1f}")
+    print(f"Total players: {total_valid_players}")
+    print(f"Total score: {total_score}")
+    print(f"Average score: {average_score:.1f}")
     print(f"High score: {max(scores_list)}")
     print(f"Low score: {min(scores_list)}")
-    print(f"Score range: {max(scores_list) - min(scores_list)}")
+    print(f"Score range: {max(scores_list) - min(scores_list)}\n")
 
 else:
     print("No scores provided. "
-          "Usage: python3 ft_score_analytics.py <score1> <score2> ...")
+          "Usage: python3 ft_score_analytics.py <score1> <score2> ...\n")

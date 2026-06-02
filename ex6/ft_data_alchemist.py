@@ -11,7 +11,7 @@ def main() -> None:
                "Gregory", "john", "kevin", "Liam"
               ]
     all_capitalized = [name.capitalize() for name in players]
-    only_capitalized = [name for name in players if name[0].isupper()]
+    only_capitalized = [name for name in players if name == name.capitalize]
 
     print(f"Initial list of players: {players}")
     print(f"New list with all names capitalized: {all_capitalized}")

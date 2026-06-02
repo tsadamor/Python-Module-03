@@ -6,7 +6,7 @@ import math
 def get_player_pos() -> tuple[float, float, float]:
     while True:
         try:
-            tmp_list = input("Enter new coordinates as floats in format"
+            tmp_list = input("Enter new coordinates as floats in format "
                              "'x,y,z': ").split(",")
             x_str, y_str, z_str = tmp_list
         except ValueError:
